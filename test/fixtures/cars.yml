@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  registration: MyString
+  car_type_id: 1
+  daily_fee: 1.5
+
+two:
+  registration: MyString
+  car_type_id: 1
+  daily_fee: 1.5

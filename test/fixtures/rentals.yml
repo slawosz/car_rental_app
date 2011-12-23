@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  from: 2011-12-23 14:14:07
+  to: 2011-12-23 14:14:07
+  daily_fee: 1.5
+  car_id: 1
+  client_id: 1
+
+two:
+  from: 2011-12-23 14:14:07
+  to: 2011-12-23 14:14:07
+  daily_fee: 1.5
+  car_id: 1
+  client_id: 1

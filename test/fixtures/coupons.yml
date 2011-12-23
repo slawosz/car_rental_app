@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  rental_id: 1
+  name: MyString
+  discount_amount: 1
+
+two:
+  rental_id: 1
+  name: MyString
+  discount_amount: 1
