@@ -7,6 +7,8 @@ gem 'rails', '3.1.1'
 
 gem 'sqlite3'
 gem 'rails_panel', :path => '../rails_panel'
+gem 'formtastic'
+gem 'formtastic-bootstrap'
 
 
 # Gems used only for assets and not required
