@@ -3,8 +3,8 @@ class Rental < ActiveRecord::Base
   belongs_to :client
   belongs_to :car
   has_one :coupon
-  validates :client_id, :presence => true
-  validates :car_id, :presence => true
+  validates :client, :presence => true
+  validates :car, :presence => true
   validates :from, :presence => true
 
   before_create do |rental|
