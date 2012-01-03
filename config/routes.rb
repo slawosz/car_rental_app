@@ -1,10 +1,16 @@
 CarRentalApp::Application.routes.draw do
+  resources :articles
+
+  devise_for :users
+
   resources :cars
   resources :car_types
   resources :coupons
   resources :rentals
   resources :equipments
   resources :clients
+
+  root :to => "rentals#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-  include RailsPanel::Resources
+  # include RailsPanel::Resources
   protect_from_forgery
   before_filter :set_resources_menu
 
@@ -13,5 +13,12 @@ class ApplicationController < ActionController::Base
       ["Rentals", rentals_path],
       ["Clients", clients_path]
     ]
+  end
+
+  def self.inherited(klass)
+    if klass.name !=~ /Devise/
+      klass.send :include, RailsPanel::Resources
+    end
+    super(klass)
   end
 end
