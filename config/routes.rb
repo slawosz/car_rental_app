@@ -10,7 +10,7 @@ CarRentalApp::Application.routes.draw do
   resources :equipments
   resources :clients
 
-  root :to => "rentals#index"
+  root :to => "cars#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

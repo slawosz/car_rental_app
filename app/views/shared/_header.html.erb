@@ -1,0 +1,14 @@
+<a class="brand" href="#">Car Rental App</a>
+<ul class="nav">
+</ul>
+<% if user_signed_in? %>
+  Hello, <%= current_user.email %>
+  <%= link_to "Edit User", edit_user_registration_path %> |
+  <%= link_to "Sign out", destroy_user_session_path, :method => :delete %>
+<% else %>
+  <form action="/users/sign_in" method="post" class="pull-right">
+    <input class="input-small" type="text" placeholder="Email" name="user[email]">
+    <input class="input-small" type="password" placeholder="Password" name="user[password]">
+    <button class="btn" type="submit">Sign in</button>
+  </form>
+<% end %>

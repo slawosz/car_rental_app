@@ -1,5 +1,5 @@
 class ApplicationController < ActionController::Base
-  # include RailsPanel::Resources
+  include RailsPanel::Resources
   protect_from_forgery
   before_filter :set_resources_menu
 
@@ -15,10 +15,7 @@ class ApplicationController < ActionController::Base
     ]
   end
 
-  def self.inherited(klass)
-    if klass.name !=~ /Devise/
-      klass.send :include, RailsPanel::Resources
-    end
-    super(klass)
+  def after_sign_out_path_for(resource_or_scope)
+    root_path
   end
 end
