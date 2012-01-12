@@ -9,6 +9,7 @@ gem 'sqlite3'
 gem 'rails_panel', :path => '../rails_panel'
 gem 'formtastic'
 gem 'formtastic-bootstrap'
+gem 'kaminari'
 
 
 # Gems used only for assets and not required
