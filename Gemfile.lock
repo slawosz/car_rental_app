@@ -7,12 +7,6 @@ PATH
       kaminari
       rails (~> 3.1.1)
 
-PATH
-  remote: ../rails_panel_add_resource_with_ajax
-  specs:
-    rails_panel_add_resource_with_ajax (0.0.1)
-      rails (~> 3.1.1)
-
 GEM
   remote: http://rubygems.org/
   specs:
@@ -145,7 +139,6 @@ DEPENDENCIES
   kaminari
   rails (= 3.1.1)
   rails_panel!
-  rails_panel_add_resource_with_ajax!
   sass-rails (~> 3.1.4)
   sqlite3
   turn
