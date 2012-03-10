@@ -12,6 +12,6 @@ class Rental < ActiveRecord::Base
   end
 
   def total_cost
-    ((from.to_date)..(to.to_date)).to_a.length * daily_fee
+    ((from.to_date)..(to.to_date)).to_a.length * daily_fee if to
   end
 end
